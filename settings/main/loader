@@ -89,8 +89,6 @@ game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):SetStateEnabled(Enum
 if getgenv().AutoRender == true then
 	UserSettings().GameSettings.MasterVolume = 0
  loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/Speed-Funstuff/main/scripts/plsstayalivepc"))()
-game:GetService("RunService"):Set3dRenderingEnabled(false)
-setfpscap(1)
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -132,8 +130,7 @@ WelcomeText.TextColor3 = Color3.fromRGB(255, 255, 255)
 WelcomeText.TextScaled = true
 WelcomeText.TextSize = 14.000
 WelcomeText.TextWrapped = true
-
-
+ setfpscap(1)
 	game:GetService("RunService"):Set3dRenderingEnabled(false)
 end
 repeat wait(1) until game.Players:FindFirstChild(getgenv().MainAccount)
