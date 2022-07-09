@@ -134,7 +134,6 @@ WelcomeText.TextWrapped = true
 
 
 	game:GetService("RunService"):Set3dRenderingEnabled(false)
-setfpscap(1)
 end
 repeat wait(1) until game.Players:FindFirstChild(getgenv().MainAccount)
 local MainAccount = getgenv().MainAccount
@@ -620,6 +619,8 @@ if Player then
 
 		end
 
+
+
 	end
 	local function SetUpAdmin() 
 		local Player = game.Players.LocalPlayer
@@ -1027,7 +1028,7 @@ if Player then
 					elseif Chat == ".drop" then
 						CustomDrop = false
 						Drop()
-					elseif Chat == ".c host" then
+					elseif Chat == ".circle host" then
 						Circle()
 
 						print("Entered the command")
@@ -1101,7 +1102,7 @@ if Player then
 
 						game:GetService("RunService"):Set3dRenderingEnabled(false)
 
-					elseif Chat == ".stop" then
+					elseif Chat == ".stop drop" then
 						CustomDrop = false
 						StopDrop()
 					elseif Chat == ".setup vault" then
@@ -1153,7 +1154,7 @@ if Player then
 					elseif Chat == ".airlock" then
 
 						game.Players.LocalPlayer.Character:WaitForChild("Animate").Disabled = true
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,7,0)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,10,0)
 
 						local BP = Instance.new("BodyPosition",game.Players.LocalPlayer.Character.HumanoidRootPart)
 						BP.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
@@ -1164,7 +1165,7 @@ if Player then
 						Load = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
 						Load.Looped = true
 						Load:Play()
-					elseif Chat == ".unairlock" then
+					elseif Chat == ".stop air" then
 						for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
 							if v:IsA("BodyPosition") then
 								v:Destroy()
@@ -1178,11 +1179,11 @@ if Player then
 					elseif Chat:match(".fps "..game.Players.LocalPlayer.Name) then
 						
 			
-					elseif Chat:match(".crash ") then
+					elseif Chat:match(".crash swag ") then
 
 
 						local str = Chat
-						local newStr, replaced = string.gsub(str, ".crash ", "")
+						local newStr, replaced = string.gsub(str, ".crash swag ", "")
 
 						if game.Players.LocalPlayer.Name:lower():sub(1,#newStr) == newStr:lower() then
 
