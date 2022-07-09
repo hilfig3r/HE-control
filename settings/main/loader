@@ -1152,19 +1152,14 @@ if Player then
 						CurrAnim:AdjustSpeed()
 					elseif Chat == ".airlock" then
 
-						game.Players.LocalPlayer.Character:WaitForChild("Animate").Disabled = true
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,10,0)
+                        local plrpos = game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').Position
 
-						local BP = Instance.new("BodyPosition",game.Players.LocalPlayer.Character.HumanoidRootPart)
-						BP.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
-						BP.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                        game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(plrpos.X, plrpos.Y + tonumber(args[3]), plrpos.Z)
 
-						local Anim = Instance.new("Animation")
-						Anim.AnimationId = "rbxassetid://9353190102"
-						Load = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
-						Load.Looped = true
-						Load:Play()
-					elseif Chat == ".stop air" then
+                        wait(0.02)
+
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+					elseif Chat == ".unairlock" then
 						for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
 							if v:IsA("BodyPosition") then
 								v:Destroy()
