@@ -5,7 +5,7 @@ if getgenv().ExecutedAlt == true then
 end
 if getgenv().MainAccount == game.Players.LocalPlayer.Name then
 	getgenv().ExecutedAlt = true
-	loadstring(game:HttpGet("seller-gui-here"))()
+	loadstring(game:HttpGet("host-script-here"))()
 	return
 end
 coroutine.wrap(function()
@@ -13,6 +13,7 @@ coroutine.wrap(function()
 	repeat wait(1)Tries+= 1 pcall(setfpscap, getgenv().FPS)
 	pcall(set_fps_cap, getgenv().FPS) until Tries > 50
 end)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/altc/main/antib"))()
 
 -- // Services
 pcall(setfpscap, getgenv().FPS)
@@ -82,13 +83,13 @@ function Abbreviate(value)
 		return str
 	end
 end
-
+------ IGNORE EVERYTHING
 repeat wait() until game.Players.LocalPlayer.Character
 
 game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):SetStateEnabled(Enum.HumanoidStateType.FallingDown,false)
 if getgenv().AutoRender == true then
 	UserSettings().GameSettings.MasterVolume = 0
- loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/Speed-Funstuff/main/scripts/plsstayalivepc"))()
+
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -133,6 +134,7 @@ WelcomeText.TextWrapped = true
 
 
 	game:GetService("RunService"):Set3dRenderingEnabled(false)
+setfpscap(1)
 end
 repeat wait(1) until game.Players:FindFirstChild(getgenv().MainAccount)
 local MainAccount = getgenv().MainAccount
@@ -618,8 +620,6 @@ if Player then
 
 		end
 
-
-
 	end
 	local function SetUpAdmin() 
 		local Player = game.Players.LocalPlayer
@@ -1027,7 +1027,7 @@ if Player then
 					elseif Chat == ".drop" then
 						CustomDrop = false
 						Drop()
-					elseif Chat == ".circle host" then
+					elseif Chat == ".c host" then
 						Circle()
 
 						print("Entered the command")
@@ -1101,7 +1101,7 @@ if Player then
 
 						game:GetService("RunService"):Set3dRenderingEnabled(false)
 
-					elseif Chat == ".stop drop" then
+					elseif Chat == ".stop" then
 						CustomDrop = false
 						StopDrop()
 					elseif Chat == ".setup vault" then
@@ -1151,17 +1151,19 @@ if Player then
 						CurrAnim:Play()
 						CurrAnim:AdjustSpeed()
 					elseif Chat == ".airlock" then
-           local plrpos = game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').Position
 
-            game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(plrpos.X, plrpos.Y + 15, plrpos.Z)
+						game.Players.LocalPlayer.Character:WaitForChild("Animate").Disabled = true
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,7,0)
 
-            wait(0.02)
+						local BP = Instance.new("BodyPosition",game.Players.LocalPlayer.Character.HumanoidRootPart)
+						BP.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
+						BP.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 
-            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-end
-
-
-
+						local Anim = Instance.new("Animation")
+						Anim.AnimationId = "rbxassetid://9353190102"
+						Load = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+						Load.Looped = true
+						Load:Play()
 					elseif Chat == ".unairlock" then
 						for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
 							if v:IsA("BodyPosition") then
@@ -1176,11 +1178,11 @@ end
 					elseif Chat:match(".fps "..game.Players.LocalPlayer.Name) then
 						
 			
-					elseif Chat:match(".crash swag ") then
+					elseif Chat:match(".crash ") then
 
 
 						local str = Chat
-						local newStr, replaced = string.gsub(str, ".crash swag ", "")
+						local newStr, replaced = string.gsub(str, ".crash ", "")
 
 						if game.Players.LocalPlayer.Name:lower():sub(1,#newStr) == newStr:lower() then
 
