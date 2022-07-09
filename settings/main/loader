@@ -130,7 +130,8 @@ WelcomeText.TextColor3 = Color3.fromRGB(255, 255, 255)
 WelcomeText.TextScaled = true
 WelcomeText.TextSize = 14.000
 WelcomeText.TextWrapped = true
- setfpscap(1)
+
+
 	game:GetService("RunService"):Set3dRenderingEnabled(false)
 end
 repeat wait(1) until game.Players:FindFirstChild(getgenv().MainAccount)
