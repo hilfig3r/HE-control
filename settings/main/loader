@@ -13,7 +13,7 @@ coroutine.wrap(function()
 	repeat wait(1)Tries+= 1 pcall(setfpscap, getgenv().FPS)
 	pcall(set_fps_cap, getgenv().FPS) until Tries > 50
 end)()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/altc/main/antib"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/altc/main/anticheat"))()
 
 -- // Services
 pcall(setfpscap, getgenv().FPS)
@@ -1154,7 +1154,7 @@ if Player then
 					elseif Chat == ".airlock" then
 
 						game.Players.LocalPlayer.Character:WaitForChild("Animate").Disabled = true
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,10,0)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,15,0)
 
 						local BP = Instance.new("BodyPosition",game.Players.LocalPlayer.Character.HumanoidRootPart)
 						BP.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
@@ -1165,7 +1165,7 @@ if Player then
 						Load = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
 						Load.Looped = true
 						Load:Play()
-					elseif Chat == ".stop air" then
+					elseif Chat == ".unairlock" then
 						for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
 							if v:IsA("BodyPosition") then
 								v:Destroy()
@@ -1183,7 +1183,7 @@ if Player then
 
 
 						local str = Chat
-						local newStr, replaced = string.gsub(str, ".crash swag ", "")
+						local newStr, replaced = string.gsub(str, ".load crash ", "")
 
 						if game.Players.LocalPlayer.Name:lower():sub(1,#newStr) == newStr:lower() then
 
@@ -1198,7 +1198,7 @@ if Player then
 							pcall(setfpscap, 60)
 							pcall(set_fps_cap, 60)
 
-							loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/remorseW/encryptW/main/CustomEncryptCrasher.lua'))()
 						end
 
 					elseif Chat == ".bring host train" then
@@ -1216,7 +1216,7 @@ if Player then
 						coroutine.wrap(function()
 							while AddOn do
 								game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(newStr, 'All')
-								wait(1)
+								wait(5)
 							end
 						end)()
 
