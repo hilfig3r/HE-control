@@ -13,10 +13,7 @@ coroutine.wrap(function()
 	repeat wait(1)Tries+= 1 pcall(setfpscap, getgenv().FPS)
 	pcall(set_fps_cap, getgenv().FPS) until Tries > 50
 end)()
-loadstring(game:HttpGet("https://raw.githubusercontent.c
-
-
-om/hilfig3r/altc/main/anticheat"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/altc/main/anticheat"))()
 
 -- // Services
 pcall(setfpscap, getgenv().FPS)
@@ -86,7 +83,7 @@ function Abbreviate(value)
 		return str
 	end
 end
------- IGNORE EVERYTHING
+
 repeat wait() until game.Players.LocalPlayer.Character
 
 game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):SetStateEnabled(Enum.HumanoidStateType.FallingDown,false)
@@ -626,158 +623,9 @@ if Player then
 
 	end
 	local function SetUpAdmin() 
-                if getgenv().Alts['[1]'] == game.Players.LocalPlayer.UserId then
+                if getgenv().Alts = [1] == game.Players.LocalPlayer.UserId then
 
                     game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.28, 21.47, -339.90)
-
-                elseif getgenv().Alts['Alt2'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.29, 21.47, -340.17)
-
-                elseif getgenv().Alts['Alt3'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-373.30, 21.47, -340.27)
-
-                elseif getgenv().Alts['Alt4'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-364.55, 21.47, -339.91)
-
-                elseif getgenv().Alts['Alt5'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.42, 21.47, -339.57)
-
-                elseif getgenv().Alts['Alt6'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.72, 21.47, -330.29)
-
-                elseif getgenv().Alts['Alt7'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-384.14, 21.47, -329.72)
-
-                elseif getgenv().Alts['Alt8'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-376.74, 21.47, -329.23)
-
-                elseif getgenv().Alts['Alt9'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-368.96, 21.47, -328.89)
-
-                elseif getgenv().Alts['Alt10'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.75, 21.47, -328.77)
-
-                elseif getgenv().Alts['Alt11'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.41, 21.47, -320.83)
-
-                elseif getgenv().Alts['Alt12'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.24, 21.47, -320.56)
-
-                elseif getgenv().Alts['Alt13'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-374.50, 21.47, -320.36)
-
-                elseif getgenv().Alts['Alt14'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.63, 21.47, -320.08)
-
-                elseif getgenv().Alts['Alt15'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.28, 21.47, -319.69)
-
-                elseif getgenv().Alts['Alt16'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-392.12, 21.47, -314.77)
-
-                elseif getgenv().Alts['Alt17'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-382.59, 21.47, -314.46)
-
-                elseif getgenv().Alts['Alt18'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-375.08, 21.47, -314.32)
-
-                elseif getgenv().Alts['Alt19'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.51, 21.47, -314.33)
-
-                elseif getgenv().Alts['Alt20'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.26, 21.47, -314.34)
-
-                elseif getgenv().Alts['Alt21'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.79, 21.47, -306.36)
-
-                elseif getgenv().Alts['Alt22'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.13, 21.47, -305.72)
-
-                elseif getgenv().Alts['Alt23'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-376.17, 21.47, -305.72)
-
-                elseif getgenv().Alts['Alt24'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.60, 21.47, -305.74)
-
-                elseif getgenv().Alts['Alt25'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-356.97, 21.47, -305.65)
-
-                elseif getgenv().Alts['Alt26'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.82, 21.47, -297.73)
-
-                elseif getgenv().Alts['Alt27'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-384.21, 21.47, -297.12)
-
-                elseif getgenv().Alts['Alt28'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-375.70, 21.47, -296.77)
-
-                elseif getgenv().Alts['Alt29'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-365.36, 21.47, -296.49)
-
-                elseif getgenv().Alts['Alt30'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-356.83, 21.47, -295.41)
-
-                elseif getgenv().Alts['Alt31'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.72, 21.47, -285.29)
-
-                elseif getgenv().Alts['Alt32'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.71, 21.47, -284.95)
-
-                elseif getgenv().Alts['Alt33'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-376.02, 21.47, -284.64)
-
-                elseif getgenv().Alts['Alt34'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-365.46, 21.47, -283.57)
-
-                elseif getgenv().Alts['Alt35'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-356.78, 21.47, -283.06)
-
-                elseif getgenv().Alts['Alt36'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.89, 21.47, -273.47)
-
-                elseif getgenv().Alts['Alt37'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-375.95, 21.47, -273.37)
-
-                elseif getgenv().Alts['Alt38'] == game.Players.LocalPlayer.UserId then
-
-                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.85, 21.47, 272.94)
-
                 end
 
             end
