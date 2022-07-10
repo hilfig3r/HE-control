@@ -13,10 +13,7 @@ coroutine.wrap(function()
 	repeat wait(1)Tries+= 1 pcall(setfpscap, getgenv().FPS)
 	pcall(set_fps_cap, getgenv().FPS) until Tries > 50
 end)()
-loadstring(game:HttpGet("https://raw.githubusercontent.c
-
-
-om/hilfig3r/altc/main/anticheat"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/altc/main/anticheat"))()
 
 -- // Services
 pcall(setfpscap, getgenv().FPS)
