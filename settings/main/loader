@@ -3,7 +3,7 @@ local Testing = false
 if getgenv().HostUser == game.Players.LocalPlayer.Name then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/h-x/main/mainloader/css/git/main"))()
 	return
-		
+	end	
 if table.find(getgenv().Alts,game.Players.LocalPlayer.UserId) then
 	getgenv().PointInTable = table.find(getgenv().Alts,game.Players.LocalPlayer.UserId)
 else
