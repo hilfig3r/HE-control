@@ -13,7 +13,10 @@ coroutine.wrap(function()
 	repeat wait(1)Tries+= 1 pcall(setfpscap, getgenv().FPS)
 	pcall(set_fps_cap, getgenv().FPS) until Tries > 50
 end)()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/altc/main/anticheat"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.c
+
+
+om/hilfig3r/altc/main/anticheat"))()
 
 -- // Services
 pcall(setfpscap, getgenv().FPS)
@@ -623,7 +626,7 @@ if Player then
 
 	end
 	local function SetUpAdmin() 
-                if getgenv().Alts['Alt1'] == game.Players.LocalPlayer.UserId then
+                if getgenv().Alts['[1]'] == game.Players.LocalPlayer.UserId then
 
                     game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.28, 21.47, -339.90)
 
