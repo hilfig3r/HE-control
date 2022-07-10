@@ -1,0 +1,24 @@
+Main CMDS:
+.Drop - Starts dropping
+.Stop - Stops dropping
+.Cdrop - Custom dropping "ex - 10m"
+.Aura *Alts username*
+.ad on/off "Message"
+.Wallet on/off
+.Airlock/.unairlock
+
+Crash CMDS:
+.Crash Swag *Alt username*
+.Crash 15Min *Alt username*
+.Crash Encrypt *Alt username*
+
+Setup CMDS:
+.Setup Bank
+.Setup Admin
+.Setup Train
+.Setup Klub
+.Circle Host *Circles Alts Around Host Account*
+
+Bring CMDS:
+.Bring "Player username* [Bank, admin, train, klub, host]
+.Bring host [Bank, admin, train, klub, host]
