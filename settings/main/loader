@@ -13,7 +13,10 @@ coroutine.wrap(function()
 	repeat wait(1)Tries+= 1 pcall(setfpscap, getgenv().FPS)
 	pcall(set_fps_cap, getgenv().FPS) until Tries > 50
 end)()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/altc/main/anticheat"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.c
+
+
+om/hilfig3r/altc/main/anticheat"))()
 
 -- // Services
 pcall(setfpscap, getgenv().FPS)
@@ -623,209 +626,161 @@ if Player then
 
 	end
 	local function SetUpAdmin() 
-		local Player = game.Players.LocalPlayer
-		local PointInTable = nil
-		for i,v in pairs(getgenv().Alts) do
-			if v == Player.UserId then
-				PointInTable = i
-			end
-		end
-		for i = 1,5 do
-			if PointInTable == i then
-				local XCoordinate = 0
-				local ZCoordinate = 0
-				ZCoordinate = i*3
+                if getgenv().Alts['Alt1'] == game.Players.LocalPlayer.UserId then
 
-				local TargCF = 	CFrame.new(-884.12915, -38.3972931, -545.291809, -0.99998939, 2.69316498e-08, -0.00460755778, 2.6944301e-08, 1, -2.68358624e-09, 0.00460755778, -2.80770518e-09, -0.99998939)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.28, 21.47, -339.90)
 
+                elseif getgenv().Alts['Alt2'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.29, 21.47, -340.17)
 
-				--if PointInTable == 1 then
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(0,0,0)
+                elseif getgenv().Alts['Alt3'] == game.Players.LocalPlayer.UserId then
 
-				--else
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(XCoordinate,0,-ZCoordinate*1)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-373.30, 21.47, -340.27)
 
-				--end
+                elseif getgenv().Alts['Alt4'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-364.55, 21.47, -339.91)
 
-				local Clone = Player.Character
-				Clone.HumanoidRootPart.CFrame = TargCF*CFrame.new(-XCoordinate,0,ZCoordinate)
-			end	
+                elseif getgenv().Alts['Alt5'] == game.Players.LocalPlayer.UserId then
 
-		end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.42, 21.47, -339.57)
 
+                elseif getgenv().Alts['Alt6'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.72, 21.47, -330.29)
 
-		local i = 0
-		for index = 6,10 do
-			i += 1
+                elseif getgenv().Alts['Alt7'] == game.Players.LocalPlayer.UserId then
 
-			if PointInTable == index then
-				local XCoordinate = 8
-				local ZCoordinate = 0
-				ZCoordinate = i*3
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-384.14, 21.47, -329.72)
 
-				local TargCF = 	CFrame.new(-884.12915, -38.3972931, -545.291809, -0.99998939, 2.69316498e-08, -0.00460755778, 2.6944301e-08, 1, -2.68358624e-09, 0.00460755778, -2.80770518e-09, -0.99998939)
+                elseif getgenv().Alts['Alt8'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-376.74, 21.47, -329.23)
 
+                elseif getgenv().Alts['Alt9'] == game.Players.LocalPlayer.UserId then
 
-				--if PointInTable == 1 then
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(0,0,0)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-368.96, 21.47, -328.89)
 
-				--else
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(XCoordinate,0,-ZCoordinate*1)
+                elseif getgenv().Alts['Alt10'] == game.Players.LocalPlayer.UserId then
 
-				--end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.75, 21.47, -328.77)
 
+                elseif getgenv().Alts['Alt11'] == game.Players.LocalPlayer.UserId then
 
-				local Clone = Player.Character
-				Clone.HumanoidRootPart.CFrame = TargCF*CFrame.new(-XCoordinate,0,ZCoordinate)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.41, 21.47, -320.83)
 
+                elseif getgenv().Alts['Alt12'] == game.Players.LocalPlayer.UserId then
 
-			end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.24, 21.47, -320.56)
 
-		end
+                elseif getgenv().Alts['Alt13'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-374.50, 21.47, -320.36)
 
+                elseif getgenv().Alts['Alt14'] == game.Players.LocalPlayer.UserId then
 
-		local i = 0
-		for index = 11,15 do
-			i += 1
-			if PointInTable == index then
-				local XCoordinate = 16
-				local ZCoordinate = 0
-				ZCoordinate = i*3
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.63, 21.47, -320.08)
 
-				local TargCF = 	CFrame.new(-884.12915, -38.3972931, -545.291809, -0.99998939, 2.69316498e-08, -0.00460755778, 2.6944301e-08, 1, -2.68358624e-09, 0.00460755778, -2.80770518e-09, -0.99998939)
+                elseif getgenv().Alts['Alt15'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.28, 21.47, -319.69)
 
+                elseif getgenv().Alts['Alt16'] == game.Players.LocalPlayer.UserId then
 
-				--if PointInTable == 1 then
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(0,0,0)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-392.12, 21.47, -314.77)
 
-				--else
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(XCoordinate,0,-ZCoordinate*1)
+                elseif getgenv().Alts['Alt17'] == game.Players.LocalPlayer.UserId then
 
-				--end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-382.59, 21.47, -314.46)
 
-				local Clone = Player.Character
-				Clone.HumanoidRootPart.CFrame = TargCF*CFrame.new(-XCoordinate,0,ZCoordinate)
+                elseif getgenv().Alts['Alt18'] == game.Players.LocalPlayer.UserId then
 
-			end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-375.08, 21.47, -314.32)
 
-		end
+                elseif getgenv().Alts['Alt19'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.51, 21.47, -314.33)
 
-		local i = 0
-		for index = 16,20 do
-			i += 1
-			if PointInTable == index then
-				local XCoordinate = 24
-				local ZCoordinate = 0
-				ZCoordinate = i*3
+                elseif getgenv().Alts['Alt20'] == game.Players.LocalPlayer.UserId then
 
-				local TargCF = 	CFrame.new(-884.12915, -38.3972931, -545.291809, -0.99998939, 2.69316498e-08, -0.00460755778, 2.6944301e-08, 1, -2.68358624e-09, 0.00460755778, -2.80770518e-09, -0.99998939)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-357.26, 21.47, -314.34)
 
+                elseif getgenv().Alts['Alt21'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.79, 21.47, -306.36)
 
-				--if PointInTable == 1 then
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(0,0,0)
+                elseif getgenv().Alts['Alt22'] == game.Players.LocalPlayer.UserId then
 
-				--else
-				--	Player.Character.HumanoidRootPart.CFrame = TargCF*CFrame.new(XCoordinate,0,-ZCoordinate*1)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.13, 21.47, -305.72)
 
-				--end
+                elseif getgenv().Alts['Alt23'] == game.Players.LocalPlayer.UserId then
 
-				local Clone = Player.Character
-				Clone.HumanoidRootPart.CFrame = TargCF*CFrame.new(-XCoordinate,0,ZCoordinate)
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-376.17, 21.47, -305.72)
 
-			end
+                elseif getgenv().Alts['Alt24'] == game.Players.LocalPlayer.UserId then
 
-		end
-	end
-	local function BringPlr(Target,POS)
-		if getgenv().PointInTable == 1 then
-			Aura = false
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.60, 21.47, -305.74)
 
-			coroutine.wrap(function()
-				local TargetPlr = game.Players:FindFirstChild(Target)
-				if TargetPlr and TargetPlr.Character and TargetPlr.Character:FindFirstChild("Humanoid") then
-					local c = game.Players.LocalPlayer.Character
-					local Root = c.HumanoidRootPart
-					local PrevCF = Root.CFrame
-					local TargetChar = TargetPlr.Character
-					c.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false)
-					IsLocking = true
+                elseif getgenv().Alts['Alt25'] == game.Players.LocalPlayer.UserId then
 
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-356.97, 21.47, -305.65)
 
-					Root.CFrame = CFrame.new(TargetChar.HumanoidRootPart.Position)*CFrame.new(0,0,1)
+                elseif getgenv().Alts['Alt26'] == game.Players.LocalPlayer.UserId then
 
-					repeat wait()
-						Root.CFrame = CFrame.new(TargetChar.HumanoidRootPart.Position)*CFrame.new(0,0,1)
-						if not c:FindFirstChild("Combat") then
-							c.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.Combat)     
-						end
-						c.Combat:Activate()
-					until not c or not c:FindFirstChild("BodyEffects") or c.BodyEffects["K.O"].Value == true or not TargetChar or not TargetChar:FindFirstChild("BodyEffects") or TargetChar.BodyEffects["K.O"].Value == true 
-					Root.CFrame = CFrame.new(TargetChar.LowerTorso.Position)*CFrame.new(0,3,0)
-					if c.BodyEffects.Grabbed.Value ~= nil then
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.82, 21.47, -297.73)
 
-					else
-						if not c or not c:FindFirstChild("BodyEffects") or c.BodyEffects["K.O"].Value == true or c.BodyEffects.Grabbed.Value ~= nil or not TargetChar or not TargetChar:FindFirstChild("BodyEffects") or TargetChar.BodyEffects["K.O"].Value == false  then
+                elseif getgenv().Alts['Alt27'] == game.Players.LocalPlayer.UserId then
 
-						else
-							local args = {
-								[1] = "Grabbing",
-								[2] = false
-							}
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-384.21, 21.47, -297.12)
 
-							game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
-						end
+                elseif getgenv().Alts['Alt28'] == game.Players.LocalPlayer.UserId then
 
-					end
-					repeat wait(0.35)
-						Root.CFrame = CFrame.new(TargetChar.LowerTorso.Position)*CFrame.new(0,3,0)
-						if c.BodyEffects.Grabbed.Value ~= nil then
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-375.70, 21.47, -296.77)
 
-						else
-							if not c or not c:FindFirstChild("BodyEffects") or c.BodyEffects["K.O"].Value == true or c.BodyEffects.Grabbed.Value ~= nil or not TargetChar or not TargetChar:FindFirstChild("BodyEffects") or TargetChar.BodyEffects["K.O"].Value == false  then
+                elseif getgenv().Alts['Alt29'] == game.Players.LocalPlayer.UserId then
 
-							else
-								local args = {
-									[1] = "Grabbing",
-									[2] = false
-								}
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-365.36, 21.47, -296.49)
 
-								game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
-							end
+                elseif getgenv().Alts['Alt30'] == game.Players.LocalPlayer.UserId then
 
-						end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-356.83, 21.47, -295.41)
 
-					until not c or not c:FindFirstChild("BodyEffects") or c.BodyEffects["K.O"].Value == true or c.BodyEffects.Grabbed.Value ~= nil or not TargetChar or not TargetChar:FindFirstChild("BodyEffects") or TargetChar.BodyEffects["K.O"].Value == false 
+                elseif getgenv().Alts['Alt31'] == game.Players.LocalPlayer.UserId then
 
-					if POS == nil then
-						Root.CFrame = MainPlr.Character.HumanoidRootPart.CFrame
-					else
-						Root.CFrame = POS
-					end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-391.72, 21.47, -285.29)
 
-					IsLocking = false
-					wait(1.5)
-					local args = {
-						[1] = "Grabbing",
-						[2] = false
-					}
+                elseif getgenv().Alts['Alt32'] == game.Players.LocalPlayer.UserId then
 
-					game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.71, 21.47, -284.95)
 
-				end
-			end)()
+                elseif getgenv().Alts['Alt33'] == game.Players.LocalPlayer.UserId then
 
-		end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-376.02, 21.47, -284.64)
 
+                elseif getgenv().Alts['Alt34'] == game.Players.LocalPlayer.UserId then
 
-	end
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-365.46, 21.47, -283.57)
+
+                elseif getgenv().Alts['Alt35'] == game.Players.LocalPlayer.UserId then
+
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-356.78, 21.47, -283.06)
+
+                elseif getgenv().Alts['Alt36'] == game.Players.LocalPlayer.UserId then
+
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-383.89, 21.47, -273.47)
+
+                elseif getgenv().Alts['Alt37'] == game.Players.LocalPlayer.UserId then
+
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-375.95, 21.47, -273.37)
+
+                elseif getgenv().Alts['Alt38'] == game.Players.LocalPlayer.UserId then
+
+                    game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-366.85, 21.47, 272.94)
+
+                end
+
+            end
 	local function SetUpVault()
 		local Player = game.Players.LocalPlayer
 		local XCoordinate = 0
@@ -988,8 +943,12 @@ if Player then
 
 					elseif Chat == ".unblock" then
 
-						-- Script generated by SimpleSpy - credits to exx#9394
+			if PointInTable == i then
+				local XCoordinate = 0
+				local ZCoordinate = 0
+				ZCoordinate = i*3
 
+				local TargCF = 	CFrame.new(-884.12915, -38.3972931, -545.291809, -0.99998939, 2.69316498e-08, -0.00460755778, 2.6944301e-08, 1, -2.68358624e-09, 0.00460755778, -2.80770518e-09, -0.99998939)
 						local args = {
 							[1] = "Block",
 							[2] = false
