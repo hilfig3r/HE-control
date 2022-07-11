@@ -5,7 +5,10 @@ Main CMDS:
 .Aura *Alts username*
 .ad on/off "Message"
 .Wallet on/off
+.Block *Blocks on all alts* 
 .Airlock/.unairlock
+.Dropped *Checks how much you dropped*
+.Mask on/off *Puts on mask*
 
 Crash CMDS:
 .Crash Swag *Alt username*
