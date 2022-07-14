@@ -1,0 +1,2 @@
+Crasher: loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/He-Control/main/settings/main/crasher"))()
+Counter : loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/He-Control/main/settings/main/Counter"))()
