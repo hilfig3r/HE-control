@@ -1,5 +1,4 @@
 local Testing = false
--- Cmds
 if table.find(getgenv().Alts,game.Players.LocalPlayer.UserId) then
 	getgenv().PointInTable = table.find(getgenv().Alts,game.Players.LocalPlayer.UserId)
 else
@@ -279,13 +278,17 @@ local function Setup(Type,Debugmode)
 			local XAxis 
 			local ZAxis
 			local i 
-			if PointInTable <= 10 then
+			if PointInTable <= 5 then
 				i = 1
-			elseif PointInTable <= 20 then
+			elseif PointInTable <= 10 then
 				i = 2
-			elseif PointInTable <= 30 then
+			elseif PointInTable <= 15 then
 				i = 3
-			elseif PointInTable <= 40 then
+			elseif PointInTable <= 20 then
+				i = 4
+			elseif PointInTable <= 25 then
+				i = 4
+			elseif PointInTable <= 30 then
 				i = 4
 			end
 			if i == 1 then
@@ -320,15 +323,19 @@ local function Setup(Type,Debugmode)
 		local XAxis 
 		local ZAxis
 		local i
-		if PointInTable <= 10 then
-			i = 1
-		elseif PointInTable <= 20 then
-			i = 2
-		elseif PointInTable <= 30 then
-			i = 3
-		elseif PointInTable <= 40 then
-			i = 4
-		end
+			if PointInTable <= 5 then
+				i = 1
+			elseif PointInTable <= 10 then
+				i = 2
+			elseif PointInTable <= 15 then
+				i = 3
+			elseif PointInTable <= 20 then
+				i = 4
+			elseif PointInTable <= 25 then
+				i = 4
+			elseif PointInTable <= 30 then
+				i = 4
+			end
 
 		if i == 1 then
 			if PointInTable <= Table["PerRow"]   then
@@ -423,7 +430,7 @@ local function Initiate()
 					DropFolder:Destroy()
 					DropFolder = nil
 				end
-			elseif Message == ".circle host" and Host and Host.Character and Host.Character:FindFirstChild("Humanoid") and Host.Character.Humanoid.Health > 0 then
+			elseif Message == ".circle" and Host and Host.Character and Host.Character:FindFirstChild("Humanoid") and Host.Character.Humanoid.Health > 0 then
 				local angle = 0
 				local cfr = Host.Character.HumanoidRootPart.CFrame*CFrame.new(0,1,0)
 				local Index = 0
@@ -561,47 +568,7 @@ local function Initiate()
 				ShowWallet()
 			elseif Message == ".wallet off" then
 				RemoveWallet()
-			elseif Message == ".dolphin" then
-				if CurrAnim and CurrAnim.IsPlaying then
-					CurrAnim:Stop()
-				end
-				local Anim = Instance.new("Animation")
-				Anim.AnimationId = "http://www.roblox.com/asset/?id=5918726674"
-				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
-				CurrAnim:Play()
-				CurrAnim:AdjustSpeed()
-			elseif Message == ".monkey" then
-				if CurrAnim and CurrAnim.IsPlaying then
-					CurrAnim:Stop()
-				end
-				local Anim = Instance.new("Animation")
-				Anim.AnimationId = "http://www.roblox.com/asset/?id=3333499508"
-				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
-				CurrAnim:Play()
-				CurrAnim:AdjustSpeed()
-			elseif Message == ".floss" then
-				if CurrAnim and CurrAnim.IsPlaying then
-					CurrAnim:Stop()
-				end
-				local Anim = Instance.new("Animation")
-				Anim.AnimationId = "http://www.roblox.com/asset/?id=5917459365"
-				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
-				CurrAnim:Play()
-				CurrAnim:AdjustSpeed()
-			elseif Message == ".shuffle" then
-				if CurrAnim and CurrAnim.IsPlaying then
-					CurrAnim:Stop()
-				end
-				local Anim = Instance.new("Animation")
-				Anim.AnimationId = "http://www.roblox.com/asset/?id=4349242221"
-				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
-				CurrAnim:Play()
-				CurrAnim:AdjustSpeed()
-			elseif Message == ".stopdance" then
-				if CurrAnim and CurrAnim.IsPlaying then
-					CurrAnim:Stop()
-				end
-			elseif Message == ".maskon" then
+			elseif Message == ".mask on" then
 				local plr = game.Players.LocalPlayer
 				local c = plr.Character
 				local Root = c.PrimaryPart
@@ -657,7 +624,7 @@ local function Initiate()
 						end
 					end
 				end
-			elseif Args[1] == ".stopaura" then
+			elseif Args[1] == ".aura off" then
 				CmdSettings["Aura"] = nil
 			elseif Args[1] == ".cdrop" and Args[2] ~= nil and not CmdSettings["CustomDrop"] then
 				local Number = GetNumberFromText(Args[2]) 
