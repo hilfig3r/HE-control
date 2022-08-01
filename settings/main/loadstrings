@@ -1,2 +1,3 @@
 Crasher: loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/He-Control/main/settings/main/hefastcrasher"))()
 Counter : loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/He-Control/main/settings/main/Counter"))()
+GFX : loadstring(game:HttpGet("https://raw.githubusercontent.com/hilfig3r/He-Control/main/settings/main/savepc"))()
